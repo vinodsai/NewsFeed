@@ -1,0 +1,9 @@
+<template name="newsform">
+  <div class="container-fluid">
+    {{#autoForm collection='News' id='insertNewsForm' type='insert' class='news-form'}}
+      {{>afQuickField name="title"}}
+      {{>afQuickField name="desc" rows=8}}
+      <button class="btn btn-primary" type="submit">Submit</button>
+    {{/autoForm}}
+  </div>
+</template>

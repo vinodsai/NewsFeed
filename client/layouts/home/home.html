@@ -1,0 +1,16 @@
+<template name='home'>
+  <div class="jumbotron">
+    <div class="container-fluid">
+      <h1>Newsfeed</h1>
+      {{> loginButtons}}
+        {{#if currentUser}}
+          <button type="button" class="btn"><a href="/newsform">Share</a></button>
+          <button type="button" class="btn"><a href="">Profile</a></button>
+          <button type="button" class="btn"><a href="">Edit Your Info</a></button>
+        {{/if}}
+    </div>
+  </div>
+  <div class="container-fluid">
+    {{> newsfeed}}
+  </div>
+</template>
