@@ -1,0 +1,9 @@
+<template name="profileform">
+  <div class="container-fluid">
+    {{#autoForm collection='Profiles' id='insertProfileForm' type='insert' class='profile-form'}}
+      {{>afQuickField name="name"}}
+      {{>afQuickField name="desc" rows=8}}
+      <button class="btn btn-primary" type="submit">Submit</button>
+    {{/autoForm}}
+  </div>
+</template>

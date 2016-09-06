@@ -1,0 +1,16 @@
+<template name='profilelayout'>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1>Hello</h1>
+      {{#with profile}}
+        <p>{{name}}</p>
+      {{/with}}
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="/images/Tesla.jpg" alt="Card image cap">
+      <div class="card-block">
+        <p class="card-text">{{#with profile}}{{desc}}{{/with}}</p>
+      </div>
+  </div>
+  </div>
+</template>

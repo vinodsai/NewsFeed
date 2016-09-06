@@ -4,9 +4,11 @@
       <h1>Newsfeed</h1>
       {{> loginButtons}}
         {{#if currentUser}}
-          <button type="button" class="btn"><a href="/newsform">Share</a></button>
-          <button type="button" class="btn"><a href="">Profile</a></button>
-          <button type="button" class="btn"><a href="">Edit Your Info</a></button>
+          {{#with currentUser}}
+            <button type="button" class="btn"><a href="/newsform">Share</a></button>
+            <button type="button" class="btn"><a href="/profilepage/{{_id}}">Profile</a></button>
+            <button type="button" class="btn"><a href="/profiledetails">Edit Your Info</a></button>
+          {{/with}}
         {{/if}}
     </div>
   </div>

@@ -6,3 +6,6 @@ Meteor.startup(() => {
 Meteor.publish("feed", function () {
   return News.find();
 });
+Meteor.publish("profiles", function (id) {
+  return Profiles.find({userId:id});
+});
